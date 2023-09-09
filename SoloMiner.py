@@ -72,8 +72,10 @@ def delay_print(s):
 print(Fore.RED,soloxminer)
 print(Fore.YELLOW,mmdrza)
 cHeight = 0
-inpAdd = input('[*] INSERT HERE YOUR ADDRESS BITCOIN WALLET For Withdrawal : ')
+inpAdd = input('[*] Type your address Bitcoin Wallet for Withdrawal : ')
 address = str(inpAdd)
+Pool_address = input("[*] Enter the Bitcoin pool that you want to connect to :")
+Pool_address_port = int(input("[*] Enter the port number for the Bitcoin pool that you want to connect to :"))
 print(Fore.YELLOW,'\nBitcoin Wallet Address ===>> ',Fore.GREEN,str(address))
 print(Fore.MAGENTA,'\n------------------------------------------------------------------------------',Style.RESET_ALL)
 delay_print(' Your Bitcoin Wallet Address Added For Mining Now ...')

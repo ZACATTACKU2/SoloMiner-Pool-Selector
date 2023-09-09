@@ -116,7 +116,7 @@ def BitcoinMiner(restart=False):
         print('[*] Bitcoin Miner Started')
 
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    sock.connect(('solo.ckpool.org', 3333))
+    sock.connect((Pool_address, Pool_address_port))
 
     sock.sendall(b'{"id": 1, "method": "mining.subscribe", "params": []}\n')
 
